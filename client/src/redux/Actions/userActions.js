@@ -3,6 +3,8 @@
 import {
   FAIL,
   GET_CURRENT,
+  GET_MAX,
+  GET_MIN,
   LOADING,
   LOGIN,
   LOGOUT,
@@ -49,6 +51,8 @@ export const getCurrent = () => async (dispatch) => {
     dispatch({ type: FAIL, payload: error.response.data });
   }
 };
+
+
 // logout
 
 export const logout = () => ({ type: LOGOUT });
